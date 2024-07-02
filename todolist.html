@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./public/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="overlay"></div>
+      <div class="spinnerParent">
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="container todocontainer hidden">
+        <form class="form-container" action="">
+          <div class="top-background">
+            <div class="bgelements">
+              <h1 class="title">TODO</h1>
+              <input type="text" id="todo" placeholder="Start typing..." />
+              <button id="add">Add</button>
+            </div>
+          </div>
+          <div class="todoList">
+            <ul id="todos"></ul>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="/todolist.js"></script>
+  </body>
+</html>
